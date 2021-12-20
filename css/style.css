@@ -36,10 +36,11 @@ body{
 .header-bottom {
     display: flex;
     align-items: center;
-    width: 100%
+    width: 14;
     justify-content: space-between;
     overflow: hidden;
     background-color: var(--cor-fundo);
+    
 }
 
 .logo-ge {
@@ -50,6 +51,13 @@ body{
 .dropdown {
     float: left;
     overflow: hidden;
+    
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+    height: 12px;
+    
 }
 
 .drop-button{
@@ -62,12 +70,13 @@ body{
     padding: 14px 16px;
     background-color: var(--cor-fundo);
     font-family: inherit;
-    margin: 0;
+    
 }
 
 .drop-button:hover {
     background-color: var(--cor-hover) ;
     transition: 0,8s;
+    width:;
 } 
 
 .drop-content {
@@ -92,6 +101,3 @@ body{
     background-color: var(--cor-hover);
 }
 
-.header-bottom:hover .drop-content {
-    display: block;
-}
