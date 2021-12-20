@@ -1,38 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-* {
+*{
+    text-decoration: none;
+    font-family: open sans, sans-serif;
+    width: fit-content;  
+    list-style: none;
+    padding: 0;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif ;
+    fot: size 1.2rem;
+    list-style: none;
+    text-dec
 }
 
-#menu-h {
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
     background-color: rgb(212, 106, 19);
 }
-
-#menu-h ul {
-    max-width: 800px;
-    padding: 0;
-    list-style: none;
+.menu-h {
+    
 }
 
-#menu-h ul li {
+.menu-h ul {
+    max-width: 800px;
+    padding: 0;
+   
+}
+
+.menu-h ul li {
     display: inline;
 }
 
-#menu-h ul li a {
+.menu-h ul li a {
     color: rgb(255, 255, 255);
     list-style: none;
     padding: 20px;
     display: inline-block;
-    transition: 3s;
+    transition: 2s;
 }
 
-#menu-h ul li a:hover {
+.menu-h ul li a:hover {
     background-color: rgb(243, 155, 84);
 }
 
-.logo-ge {
-    ;
-}
+.logo_ge {
+    width: 3rem 
+} */
