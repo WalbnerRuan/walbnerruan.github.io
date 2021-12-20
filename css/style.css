@@ -1,76 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --cor-fundo : rgb(245, 91, 2);
+    --cor-hover : rgb(248, 143, 44);
+    --cor-primaria : rgb(255, 255, 255);
+    --cor-fonte : rgb(26, 26, 26);
+    --padding : 4;
+}
 
 *{
     text-decoration: none;
-    font-family: open sans, sans-serif;
-    width: fit-content;  
+    font-family: open sans, sans-serif; 
     list-style: none;
-    padding: 0;
-  
+    padding: 0; 
+}
+body{
+    margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* * {
-    margin: 0 auto;
+.header-master{
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif ;
-    fot: size 1.2rem;
-    list-style: none;
-    text-dec
 }
 
-.header{
+ .header-top {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0;
-    background-color: rgb(212, 106, 19);
-}
-.menu-h {
-    
+    justify-content: center;
 }
 
-.menu-h ul {
-    max-width: 800px;
-    padding: 0;
-   
+.scout-br, .scout-ce{
+    width: 18rem;
+    padding: var(--padding);
 }
 
-.menu-h ul li {
-    display: inline;
+.header-bottom {
+    display: flex;
+    align-items: center;
+    width: 100%
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: var(--cor-fundo);
 }
 
-.menu-h ul li a {
-    color: rgb(255, 255, 255);
-    list-style: none;
-    padding: 20px;
-    display: inline-block;
-    transition: 2s;
+.logo-ge {
+    width: 4rem;
+    margin: 8px;
 }
 
-.menu-h ul li a:hover {
-    background-color: rgb(243, 155, 84);
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
 
-.logo_ge {
-    width: 3rem 
-} */
+.drop-button{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: var(--cor-primaria);
+    padding: 14px 16px;
+    background-color: var(--cor-fundo);
+    font-family: inherit;
+    margin: 0;
+}
+
+.drop-button:hover {
+    background-color: var(--cor-hover) ;
+    transition: 0,8s;
+} 
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color:#f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(107, 107, 107);
+    z-index: 1;
+}
+
+.drop-content a{
+    float: none;
+    color: var(--cor-fundo);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.drop-content:hover{
+    background-color: var(--cor-hover);
+}
+
+.header-bottom:hover .drop-content {
+    display: block;
+}
