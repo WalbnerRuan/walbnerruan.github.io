@@ -4,7 +4,7 @@
     --cor-hover : rgb(248, 143, 44);
     --cor-primaria : rgb(255, 255, 255);
     --cor-fonte : rgb(26, 26, 26);
-    --padding : 4;
+    --padding : 4px;
 }
 
 *{
@@ -36,7 +36,6 @@ body{
 .header-bottom {
     display: flex;
     align-items: center;
-    width: 14;
     justify-content: space-between;
     overflow: hidden;
     background-color: var(--cor-fundo);
@@ -50,24 +49,20 @@ body{
 
 .dropdown {
     float: left;
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
 
 .dropdown:hover .drop-content {
     display: block;
-    height: 12px;
-    
 }
 
 .drop-button{
-    display: flex;
     justify-content: center;
     font-size: 15px;
     border: none;
     outline: none;
     color: var(--cor-primaria);
-    padding: 14px 16px;
+    padding: 30px 16px;
     background-color: var(--cor-fundo);
     font-family: inherit;
     
@@ -76,7 +71,6 @@ body{
 .drop-button:hover {
     background-color: var(--cor-hover) ;
     transition: 0,8s;
-    width:;
 } 
 
 .drop-content {
