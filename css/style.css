@@ -48,10 +48,10 @@ body{
 .header-bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     overflow: hidden;
     background-color: var(--cor-fundo);
-    
+    box-shadow: 30px rgb(107, 107, 107); 
 }
 
 .logo-ge {
@@ -90,7 +90,7 @@ body{
     position: absolute;
     background-color:#f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 6px 6px 0px rgb(107, 107, 107);
+    box-shadow: 0px 6px 6px 0px rgb(39, 39, 39);
     z-index: 1;
 }
 
@@ -112,7 +112,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/IMG_1819.png");
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/IMG_1819.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover ;
@@ -123,6 +123,40 @@ body{
 .main-text {
     text-align: center;
     top: 50%;
-    color: white;
+    color: rgb(223, 223, 223);
     font-family: var(--font-family2);
 }
+
+.hero-text1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.ramos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    font-family: var(--font-family2);
+    text-decoration: none;
+}
+
+.ramos a {
+    color: rgb(63, 62, 62);
+    font-size: 70% ;
+}
+
+.choice-one {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.alcateia {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/IMG_1789.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%}
