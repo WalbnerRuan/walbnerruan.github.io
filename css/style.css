@@ -136,7 +136,8 @@ body{
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: var(--font-family2);
     text-decoration: none;
 }
@@ -150,13 +151,54 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    height: auto;
+    font-family: var(--font-family1);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.alcateia {
-    display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/IMG_1789.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.choice-one:hover {
+    box-shadow: 20px #202020;
+
+}
+
+.choice-one img {
+    max-width: 100%;
+    flex: 1 1 200px;
+}
+
+.choice-one h4, p{
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.choice-one p{
+    font-size: 14px;
+    justify-content: center;
+}
+
+.lobo, .scout, .senior, .pio, .bp {
+    margin: 10px;
     position: relative;
-    height: 100%}
+}
+
+.lobo-img {
+    border: 2px solid rgb(255, 251, 2);
+}
+
+.scout-img {
+    border: 2px solid rgb(12, 138, 8);
+}
+
+.senior-img {
+    border: 2px solid #831d1c;
+}
+
+.pio-img {
+    border: 2px solid #d40a0a;
+}
+
+.bp-img {
+    border: 2px solid rgb(9, 1, 128);
+} 
