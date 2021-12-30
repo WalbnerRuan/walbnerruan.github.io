@@ -132,6 +132,10 @@ body{
     margin-bottom: 0px;
 }
 
+#ramos {
+    background-color: rgb(235, 235, 235);
+}
+
 .ramos {
     display: flex;
     text-align: center;
@@ -155,6 +159,7 @@ body{
     font-family: var(--font-family1);
     max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .choice-one:hover {
@@ -201,3 +206,30 @@ body{
 .bp-img {
     border: 2px solid rgb(9, 1, 128);
 } 
+
+#depoimento {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    padding: 0 5px 5px 0;
+}
+
+.depoimentos {
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: var(--font-family2);
+}
+
+.depoimentos img {
+    display: flex;
+    max-width: 60%;
+    flex: 1;
+}
+
+.depoimentos div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
